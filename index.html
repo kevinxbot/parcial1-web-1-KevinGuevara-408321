@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Muro Social</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="fb-header">
+        <div class="fb-header-content">
+            <div class="fb-logo">
+                <span class="fb-title">facebook</span>
+            </div>
+            <div class="fb-header-user">
+                <span class="fb-header-icons">
+                    <span title="Notificaciones">🔔</span>
+                    <span title="Mensajes">💬</span>
+                    <span title="Cuenta">👤</span>
+                </span>
+            </div>
+        </div>
+    </header>
+<main>
+<div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="profile-card">
+        <img src="assets/negro-whatsapp.webp" alt="Man wearing a plaid bucket hat and holding a light blue towel over his shoulder, standing outdoors in front of old stone ruins and grassy area under a clear sky" class="avatar">
+        <h3 class="profile-name">Kevin Guevara</h3>
+        </div>
+
+        <nav class="side-nav" aria-label="Perfil">
+        <a href="#info" class="side-link">Información</a>
+        <a href="#info" class="side-link">Info</a>
+        <a href="#info" class="side-link">x.Amigos</a>
+        <a href="#info" class="side-link">Ver todo</a>
+        </nav>
+
+        <!-- Fotos de amigos debajo de "x.Amigos" -->
+        <div class="sidebar-friends-grid">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amigo 1" class="friend-avatar">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amiga 2" class="friend-avatar">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Amigo 3" class="friend-avatar">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amiga 4" class="friend-avatar">
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="content">
+
+        <div class="tabs">
+        <a href="#muro" class="tab-link">Muro</a>
+        <a href="#info" class="tab-link">Info</a>
+        <a href="#photos" class="tab-link">Photos</a>
+        <a href="#boxes" class="tab-link">Boxes</a>
+        </div>
+
+        <!-- MURO -->
+        <section id="muro" class="page-section">
+        <h2>Muro</h2>
+
+        <!-- Caja para publicar -->
+        <div class="post-box" aria-label="Crear publicación">
+            <textarea id="post-text" placeholder="Escribe algo..." rows="3"></textarea>
+            <div class="post-actions">
+            <label class="attach">
+                <input type="file" id="post-file" style="display:none">
+                Adjuntar
+            </label>
+            <button id="btn-post" class="btn-primary">Compartir</button>
+            </div>
+        </div>
+
+        <!-- Posts dinámicos -->
+        <div id="posts-list">
+            <!-- ejemplo inicial -->
+            <article class="post">
+            <!-- Imagen principal del post -->
+            <img src="assets/negro-whatsapp.webp" alt="Foto del muro" class="post-main-img" style="width:100%;max-width:400px;display:block;margin:0 auto 10px;">
+            <div class="post-meta">
+                <img src="assets/negro-whatsapp.webp" alt="A man wearing a plaid bucket hat stands outdoors holding a light blue towel over his shoulder, showing a relaxed posture in front of old stone ruins and grassy area under a clear sky, conveying a casual and calm atmosphere" class="post-avatar">
+                <div>
+                    <strong>Kevin Guevara</strong>
+                    <div class="post-date">29 oct 2025</div>
+                </div>
+            </div>
+            <p class="post-body">Bienvenido al perfil.</p>
+            <div class="post-controls">
+                <button class="like-btn"><span class="like-count">0</span> 👍</button>
+                <button class="dislike-btn"><span class="dislike-count">0</span> 👎</button>
+                <button class="share-btn">Compartir</button>
+                <button class="comments-toggle">Ver comentarios</button>
+            </div>
+            <div class="comments hidden">
+                <p class="comment"><strong>Nombre</strong> — mi post</p>
+            </div>
+            </article>
+        </div>
+        </section>
+
+        <!-- INFO -->
+        <section id="info" class="page-section hidden">
+        <h2>Información</h2>
+        <p>Nombre: Kevin Guevara</p>
+        <p>Ubicación: Cali</p>
+        <p>Contacto: kevin.guevara01@unicatolica.edu.co</p>
+        <h3>Amigos</h3>
+        <div class="friends-list">
+            <figure>
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Amigo 1" class="friend-avatar">
+                <figcaption>Juan</figcaption>
+            </figure>
+            <figure>
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amiga 2" class="friend-avatar">
+                <figcaption>María</figcaption>
+            </figure>
+            <figure>
+                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Amigo 3" class="friend-avatar">
+                <figcaption>Carlos</figcaption>
+            </figure>
+        </div>
+        </section>
+
+        <!-- PHOTOS -->
+        <section id="photos" class="page-section hidden">
+            <h2>Photos</h2>
+            <div class="photo-grid" aria-live="polite">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Paisaje 1">
+                    <figcaption>Paisaje 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Paisaje 2">
+                    <figcaption>Paisaje 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Paisaje 3">
+                    <figcaption>Paisaje 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Paisaje 4">
+                    <figcaption>Paisaje 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80" alt="Paisaje 5">
+                    <figcaption>Paisaje 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80" alt="Paisaje 6">
+                    <figcaption>Paisaje 6</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80" alt="Paisaje 7">
+                    <figcaption>Paisaje 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=400&q=80" alt="Paisaje 8">
+                    <figcaption>Paisaje 8</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- BOXES -->
+        <section id="boxes" class="page-section hidden">
+        <h2>Boxes</h2>
+        <div class="boxes-grid">
+            <div class="box"><h3>Box 1</h3><p>me gusta la cocina y las motos, tambien ir a ver peliculas 1</p></div>
+            <div class="box"><h3>Box 2</h3><p>deportes, soy apacionado a los dportes, entrenaba footbol antes pero me sali 2</p></div>
+            <div class="box"><h3>Box 3</h3><p>profe se que me pase de la hora pero vea que estoy trasnochado para poderle entregar este boxes ¿si? 3</p></div>
+        </div>
+        </section>
+    </div>
+    </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+/* Fondo general */
+body {
+    background: #e9ebee;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header clásico */
+.fb-header {
+    background: #3b5998;
+    padding: 8px 0;
+}
+.fb-header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+.fb-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    letter-spacing: -1px;
+}
+
+/* Layout clásico */
+.layout {
+    display: flex;
+    max-width: 1000px;
+    margin: 24px auto 0 auto;
+    gap: 16px;
+}
+.sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 12px;
+}
+.content {
+    flex: 1;
+    background: #fff;
+    padding: 16px;
+}
+
+/* Sidebar y avatar */
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 0; /* Cambia de 50% a 0 para que sea cuadrada */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 8px;
+}
+.profile-name {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 0 12px 0;
+}
+
+/* Navegación lateral */
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.side-link {
+    color: #3b5998;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 3px;
+}
+.side-link:hover {
+    background: #e9ebee;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tab-link {
+    padding: 6px 14px;
+    background: #f5f6f7;
+    border-radius: 3px 3px 0 0;
+    text-decoration: none;
+    color: #3b5998;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+.tab-link.active, .tab-link:hover {
+    background: #fff;
+    color: #222;
+    border-bottom: 1px solid #fff;
+}
+
+/* Post box y posts */
+.post-box textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccd0d5;
+    font-family: inherit;
+}
+.btn-primary {
+    background: #3b5998;
+    color: #fff;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.post {
+    background: #fff;
+    padding: 12px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+}
+.post-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.post-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.post-date {
+    font-size: 0.85rem;
+    color: #888;
+}
+.post-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+.like-btn, .share-btn, .comments-toggle {
+    background: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #3b5998;
+    font-size: 0.95rem;
+}
+.like-btn:hover, .share-btn:hover, .comments-toggle:hover {
+    background: #e9ebee;
+}
+.dislike-btn {
+    background: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 0.95rem;
+    margin-left: 4px;
+}
+.dislike-btn:hover {
+    background: #fbeaea;
+}
+
+/* Photos */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+}
+.photo-grid figure {
+    margin: 0;
+    background: #fff;
+    border-radius: 3px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.photo-grid img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Boxes */
+.boxes-grid {
+    display: flex;
+    gap: 10px;
+}
+.box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    flex: 1;
+}
+
+/* Ocultar secciones */
+.hidden {
+    display: none;
+}
+.sidebar-friends-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-top: 10px;
+    justify-items: center;
+}
+.friend-avatar {
+    width: 32px;
+    height: 32px;
+    /* Quita el border-radius para que sean cuadros */
+    border-radius: 0;
+    object-fit: cover;
+    border: 2px solid #3b5998;
+}
