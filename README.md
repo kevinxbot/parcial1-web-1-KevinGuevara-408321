@@ -17,6 +17,11 @@ El objetivo fue implementar una interfaz inspirada en redes sociales (Facebook) 
 El proyecto está desplegado en **Vercel** para su visualización en línea:  
 
  [Ver aplicación en Vercel](https://parcial1-web-1-kevin-guevara-408321.vercel.app/)
+
+ 
+
+ ## Deploy
+ EL link del video esta en **Drive** para su visualizacion en pagina:
  [link para ver el video explicativo](https://docs.google.com/videos/d/1jyLarc0WNtG6lTpbP4QP5NslEHUItLWBIDOBKPiOzMA/edit?usp=sharing)
 
 
